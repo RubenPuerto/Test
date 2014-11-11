@@ -102,7 +102,33 @@ font-family: cursive;
 font-size: 18px;
 }
 table{
-    position: absolute;
+    position: relative;
     margin-left: 40px;
 }
+.footer{
+background-color: rgba(63, 74, 117, 1);
+color: white;
+text-align: center;
+font-family: cursive;
+font-size: 18px;
+height: 150px;
+width: 500px; 
+position: absolute
+}
+.redes{
+background-color: rgba(63, 74, 117, 1);
+color: white;
+text-align: center;
+font-family: cursive;
+font-size: 18px;
+height: 150px;
+width: 500px; 
+margin-left: 50%;
+}
+
+.iconos{
+  
+    margin-left: 115px;
+}
+
 
