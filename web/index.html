@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
         <link href="css/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+    
     </head>
     <body>
         
@@ -156,16 +157,28 @@ and open the template in the editor.
                <table>
                    <tr>
                        <td><a href="prueba"> <img src="img/redes/facebook.png"> </a></td>  
-                       <td><a href="prueba"> <img src="img/redes/twitter.png"> </a></td>  
-                       <td><a href="javascript:abrir('NuevoCurso.jsp')"> <img src="img/redes/youtube.png"> </a></td>  
+                       <td><a href="javascript:popup('FormularioCursoNuevo.jsp',400,300)"> <img src="img/redes/twitter.png"> </a></td>  
+                       <td><a href="javascript:abrir('FormularioCursoNuevo.jsp')"> <img src="img/redes/youtube.png"> </a></td>  
+                      
                    </tr>
                </table>
         </div>
 <script> 
 function abrir(url) { 
-open(url,'','top=100,left=100,width=500,height=250') ; 
+window.open(url,'','top=200,left=200,width=900,height=400,menubar=0,toolbar=0,directories=0,scrollbars=no,resizable=no') ; 
 } 
 </script> 
+
+    <script>
+        function popup(url,ancho,alto) {
+        var posicion_x; 
+        var posicion_y; 
+        posicion_x=(screen.width/2)-(ancho/2); 
+        posicion_y=(screen.height/2)-(alto/2); 
+        window.open(url," ", "width="+ancho+",height="+alto+",menubar=0,toolbar=0,directories=0,scrollbars=no,resizable=no,left="+posicion_x+",top="+posicion_y+"");
+}
+</script>
+
         
     </body>
 </html>
